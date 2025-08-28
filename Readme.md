@@ -7,7 +7,6 @@ The project uses **Sentence Transformers** to embed movie plots and perform sema
 ---
 
 ## Setup
-
 1. Clone the repository:
    ```bash
    git clone https://github.com/your-username/movie-search-assignment.git
@@ -24,6 +23,7 @@ The project uses **Sentence Transformers** to embed movie plots and perform sema
    ```
 ## Usage
   ```bash
-      bash run_scrip.sh query
+  bash run_scrip.sh query
    ```
+
 
