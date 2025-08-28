@@ -3,6 +3,7 @@ from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
 from typing import List
 import logging
+import sys
 
 logging.basicConfig(level=logging.DEBUG, format="%(asctime)s - %(levelname)s - %(message)s")
 logger=logging.getLogger()
@@ -33,4 +34,10 @@ def search_movies(query:str,top_n:int=3)->pd.DataFrame:
 
     
 
+if __name__ == "__main__":
+    if len(sys.argv) < 2:
+        print("Usage: python3 main.py <query>")
+    else:
+        query = sys.argv[1]
+        print(search_movies(query))
     
